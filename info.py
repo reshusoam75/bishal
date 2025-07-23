@@ -18,10 +18,10 @@ API_HASH = environ.get('API_HASH', 'fe87e7bd7f183c6a9647d0707954b925')
 BOT_TOKEN = environ.get('BOT_TOKEN', '6437666788:AAF-vjKeQ8tEZ6aDssIbNEmzxU5xgy5McHI')
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6105140197').split()]
-USERNAME = environ.get('USERNAME', "https://telegram.me/biisal")
+USERNAME = environ.get('USERNAME', "https://telegram.me/psmoviegroup")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001951683682'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', '')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://telegram.me/psmovieworld')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001646106292').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://abmovieshouse1:abmovieshouse1@cluster0.gtacdwd.mongodb.net/?retryWrites=true&w=majority")
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "TELEGRAM_BOT_INFO")
@@ -34,7 +34,7 @@ DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1001905670346'))
 URL = environ.get('URL', 'mytestbot-jvdfhbj.com')
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
-IS_VERIFY = is_enabled('IS_VERIFY', True)
+IS_VERIFY = is_enabled('IS_VERIFY', False)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001951683682'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/Movie_Url_link_downloader/17")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
